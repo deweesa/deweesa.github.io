@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Personal notes
 - To build image run `docker build -t image_name:tag`
-- To run container off image on port run `docker run -p host_port:container_port`
+- To run container off image on port run `docker run -p host_port:container_port tag:version`
