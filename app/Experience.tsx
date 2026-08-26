@@ -26,7 +26,7 @@ export default function Experience() {
 	return (
 		<section className="experience-section" id="experience" aria-labelledby="experience-title">
 			<div className="experience-intro">
-				<p className="section-kicker"><span /> Experience</p>
+				<p className="section-kicker">Experience</p>
 				<h2 id="experience-title">A career spent<br /><em>making things clearer.</em></h2>
 				<p className="experience-summary">
 					I work across product, design, and engineering to help ambitious ideas find their shape.
