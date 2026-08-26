@@ -13,7 +13,7 @@ export default function HeroSpotLight() {
 
             <section className="hero-content" id="top" aria-labelledby="hero-title">
                 <div className="hero-copy">
-                    <p className="eyebrow"><span /> Software Engineer · Seattle / Anywhere</p>
+                    <p className="eyebrow">Software Engineer · Seattle / Anywhere</p>
                     <p className="hero-preamble">Hi, I&apos;m</p>
                     {/*<h1 id="hero-title">Software with a point of <em>view.</em></h1>*/}
                     <h1 id="hero-title">Asa DeWeese</h1>
