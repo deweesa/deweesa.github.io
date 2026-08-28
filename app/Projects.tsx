@@ -30,7 +30,6 @@ export default function Projects() {
 		<section className="projects-section" id="projects" aria-labelledby="projects-title">
 			<div className="projects-heading">
 				<p className="section-kicker">Selected work</p>
-				<h2 id="projects-title">Ideas, made<br /><em>tangible.</em></h2>
 				<p className="projects-summary">
 					A few things I&apos;ve helped shape across product, design, and engineering.
 				</p>
