@@ -1,5 +1,6 @@
 import Experience from "./Experience";
 import HeroSpotLight from "./hero";
+import Projects from "./Projects";
 
 export default function Home() {
 
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <HeroSpotLight />
       <Experience />
+      <Projects />
     </>
   );
 }
