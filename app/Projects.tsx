@@ -41,10 +41,6 @@ export default function Projects() {
 						<div className={`project-card__art ${project.className}`} aria-hidden="true">
 							<span className="project-card__art-label">{project.artLabel}</span>
 						</div>
-						<div className="project-card__meta">
-							<span>{project.number}</span>
-							<span>{project.type}</span>
-						</div>
 						<h3>{project.title}</h3>
 						<p>{project.description}</p>
 					</article>
