@@ -1,28 +1,48 @@
-const experiences = [
+const companies = [
 	{
-		period: "2022 — Present",
-		role: "Independent Product Developer",
 		company: "Freelance / Collaborations",
-		description: "Partnering with teams to turn early ideas into clear, durable products from first sketch to shipped interface.",
-		skills: "Product strategy · UI engineering · Prototyping",
+		positions: [
+			{
+				period: "2022 — Present",
+				role: "Independent Product Developer",
+				description: "Partnering with teams to turn early ideas into clear, durable products from first sketch to shipped interface.",
+				skills: "Product strategy · UI engineering · Prototyping",
+			},
+		],
 	},
 	{
-		period: "2019 — 2022",
-		role: "Software Engineer",
 		company: "Product & Platform Teams",
-		description: "Built thoughtful web experiences across the stack, bringing a product perspective to systems, features, and everyday details.",
-		skills: "Frontend architecture · Design systems · Collaboration",
+		positions: [
+			{
+				period: "2019 — 2022",
+				role: "Software Engineer",
+				description: "Built thoughtful web experiences across the stack, bringing a product perspective to systems, features, and everyday details.",
+				skills: "Frontend architecture · Design systems · Collaboration",
+			},
+			{
+				period: "2019 — 2022",
+				role: "Software Engineer",
+				description: "Built thoughtful web experiences across the stack, bringing a product perspective to systems, features, and everyday details.",
+				skills: "Frontend architecture · Design systems · Collaboration",
+			},
+		],
 	},
 	{
-		period: "2016 — 2019",
-		role: "Software Developer",
 		company: "Digital Products",
-		description: "Learned the craft by making complex tools more approachable, useful, and reliable for the people who depend on them.",
-		skills: "Web development · Interaction design · Accessibility",
+		positions: [
+			{
+				period: "2016 — 2019",
+				role: "Software Developer",
+				description: "Learned the craft by making complex tools more approachable, useful, and reliable for the people who depend on them.",
+				skills: "Web development · Interaction design · Accessibility",
+			},
+		],
 	},
 ];
 
 export default function Experience() {
+	let positionIndex = 0;
+
 	return (
 		<section className="experience-section" id="experience" aria-labelledby="experience-title">
 			<div className="experience-intro">
@@ -34,17 +54,24 @@ export default function Experience() {
 			</div>
 
 			<div className="experience-list">
-				{experiences.map((experience, index) => (
-					<article className="experience-item" key={experience.period}>
-						<div className="experience-item__number">0{index + 1}</div>
-						<div className="experience-item__period">{experience.period}</div>
-						<div className="experience-item__details">
-							<h3>{experience.role}</h3>
-							<p className="experience-item__company">{experience.company}</p>
-							<p className="experience-item__description">{experience.description}</p>
-							<p className="experience-item__skills">{experience.skills}</p>
-						</div>
-					</article>
+				{companies.map((companyData) => (
+					<div key={companyData.company} className="experience-company">
+						{companyData.positions.map((position) => {
+							positionIndex++;
+							return (
+								<article className="experience-item" key={position.period}>
+									<div className="experience-item__number">0{positionIndex}</div>
+									<div className="experience-item__period">{position.period}</div>
+									<div className="experience-item__details">
+										<h3>{position.role}</h3>
+										<p className="experience-item__company">{companyData.company}</p>
+										<p className="experience-item__description">{position.description}</p>
+										<p className="experience-item__skills">{position.skills}</p>
+									</div>
+								</article>
+							);
+						})}
+					</div>
 				))}
 			</div>
 		</section>
