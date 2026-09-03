@@ -22,8 +22,8 @@ export default function HeroSpotLight() {
                         calm, useful digital experiences.
                     </p>
                     <div className="hero-actions">
-                        <a className="button button--dark" href="#contact">Let&apos;s work together <span aria-hidden="true">↗</span></a>
-                        <a className="text-link" href="#contact">More about me <span aria-hidden="true">↗</span></a>
+                        {/* <a className="button button--dark" href="#contact">Let&apos;s work together <span aria-hidden="true">↗</span></a> */}
+                        {/* <a className="text-link" href="#contact">More about me <span aria-hidden="true">↗</span></a> */}
                     </div>
                 </div>
             </section>
